@@ -11,18 +11,6 @@ yarn dev
 # or
 pnpm dev
 ```
-"It is a clone website of Netflix, offering a similar range of movies and TV shows for users to enjoy."
-
-Welcome to our video website! We're excited to offer you a vast library of videos to explore and enjoy. Whether you're looking for the latest viral sensation, classic TV shows and movies, or educational content, you'll find it all here.
-
-Our easy-to-use interface makes it simple to find what you're looking for. You can browse by category, search by keyword, or use our recommendations engine to discover new content based on your viewing history.
-
-One of the best things about our video website is that you can access it from anywhere, at any time. Whether you're at home on your computer, on the go with your mobile device, or streaming on your smart TV, you can enjoy your favorite videos with ease.
-
-We're constantly updating our video library with fresh content, so be sure to check back often to see what's new. And if you have any suggestions for videos or features you'd like to see, please don't hesitate to let us know.
-
-Thank you for choosing our video website. We hope you have a great time exploring all the amazing videos we have to offer!
-
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
