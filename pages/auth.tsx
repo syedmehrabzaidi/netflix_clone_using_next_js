@@ -3,14 +3,14 @@ import { NextPageContext } from 'next';
 import axios from 'axios';
 import { signIn } from 'next-auth/react'
 import Input from '@/components/input';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
 
 
 
 const Auth = (res:any) => {
-  const router = useRouter();
+  // const router = useRouter();
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
@@ -27,15 +27,15 @@ const Auth = (res:any) => {
           await signIn('credentials', {
             email,
             password,
-            redirect: false,
-            callbackUrl: '/'
+            // redirect: false,
+            callbackUrl: '/profiles'
           });
           console.log('________________>>>>>','SUCCESSFULLY  LOGIN')
-          router.push('/');
+          // router.push('/');
         } catch (error) {
           console.log(error);
         }
-      }, [email, password, router]);
+      }, [email, password,]);
 
       // user register
       const register = useCallback(async () => {
@@ -98,14 +98,14 @@ const Auth = (res:any) => {
             </button>
             <div className='flex flex-row items-center gap-4 mt-8 justify-center'>
                 {/* GOOGLE button */}
-                <div onClick={() => signIn('google', {callbackUrl:'/'})} 
+                <div onClick={() => signIn('google', {callbackUrl:'/profiles'})} 
                 className='w-10 h-10 bg-white
                 rounded-full flex items-center justify-center cursor-pointer
                 hover:opacity-80 translate 
                 '><FcGoogle size={30}/></div>
 
                 {/* GITHUB button */}
-                <div onClick={() => signIn('github',{callbackUrl:'/'})} 
+                <div onClick={() => signIn('github',{callbackUrl:'/profiles'})} 
                 className='w-10 h-10 bg-white
                 rounded-full flex items-center justify-center cursor-pointer
                 hover:opacity-80 translate 
