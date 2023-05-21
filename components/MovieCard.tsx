@@ -3,17 +3,17 @@ import { useRouter } from 'next/router';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import { PlayIcon } from '@heroicons/react/24/solid';
 
-// import { MovieInterface } from '@/types';
+import { MovieInterface } from '@/types';
 import FavoriteButton from '@/components/FavoriteButton';
 // import useInfoModalStore from '@/hooks/useInfoModalStore';
 
 interface MovieCardProps {
-  // data: MovieInterface;
-  data: {'thumbnailUrl':'',
-        'id':'',
-        'genre':'',
-        'duration':''
-        };
+  data: MovieInterface;
+  // data: {'thumbnailUrl':'',
+  //       'id':'',
+  //       'genre':'',
+  //       'duration':''
+  //       };
 }
 
 const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
